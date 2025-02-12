@@ -1,25 +1,24 @@
-
 arr = [64, 25, 12, 22, 11]
 
 Iteración 1 (i = 1)
-- cle = 25
+- key = 25
 - j = 0: Compara 25 y 64, intercambia. Arreglo: [64, 64, 12, 22, 11]
 - j = -1: Inserta 25 en la posición correcta. Arreglo: [25, 64, 12, 22, 11]
 
 Iteración 2 (i = 2)
-- cle = 12
+- key = 12
 - j = 1: Compara 12 y 64, intercambia. Arreglo: [25, 64, 64, 22, 11]
 - j = 0: Compara 12 y 25, intercambia. Arreglo: [25, 25, 64, 22, 11]
 - j = -1: Inserta 12 en la posición correcta. Arreglo: [12, 25, 64, 22, 11]
 
 Iteración 3 (i = 3)
-- cle = 22
+- key = 22
 - j = 2: Compara 22 y 64, intercambia. Arreglo: [12, 25, 64, 64, 11]
 - j = 1: Compara 22 y 25, intercambia. Arreglo: [12, 25, 25, 64, 11]
 - j = 0: Compara 22 y 12, no intercambia. Inserta 22 en la posición correcta. Arreglo: [12, 22, 25, 64, 11]
 
 Iteración 4 (i = 4)
-- cle = 11
+- key = 11
 - j = 3: Compara 11 y 64, intercambia. Arreglo: [12, 22, 25, 64, 64]
 - j = 2: Compara 11 y 25, intercambia. Arreglo: [12, 22, 25, 25, 64]
 - j = 1: Compara 11 y 22, intercambia. Arreglo: [12, 22, 22, 25, 64]
