@@ -2,8 +2,12 @@
 
 def tri_a_bulles(arr):
     n = len(arr)
+    print(n)         # Mostrar el número de elementos en el arreglo
+
+    # Iterar sobre todos los elementos del arreglo
     for i in range(n):
-        for j in range(0, n-i-1):
+        for j in range(0, n-i-1):   # Últimos i elementos ya están en su lugar
+            # Intercambiar si el elemento encontrado es mayor que el siguiente elemento
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
                 # Mostrar el estado del arreglo después de cada intercambio
