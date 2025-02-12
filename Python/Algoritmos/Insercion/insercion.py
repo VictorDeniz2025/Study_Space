@@ -1,5 +1,4 @@
 def ordenar_por_inserción(arr):
-
     for i in range(1, len(arr)):
         cle = arr[i]
         j = i - 1
@@ -7,10 +6,13 @@ def ordenar_por_inserción(arr):
         while j >= 0 and cle < arr[j]:
             arr[j + 1] = arr[j]
             j -= 1
-            arr[j + 1] = cle
+        arr[j + 1] = cle
 
+        # Mostrar el estado del arreglo después de cada iteración
+        print(f"Iteración {i}: {arr}")
 
 # Ejemplo de uso
+
 
 arr = [64, 25, 12, 22, 11]
 
