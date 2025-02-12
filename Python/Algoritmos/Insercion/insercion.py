@@ -1,8 +1,12 @@
+
+# Algoritmo de ordenamiento por inserción
+
 def ordenar_por_inserción(arr):
-    for i in range(1, len(arr)):
+    for i in range(1, len(arr)):  # Recorrer el arreglo
         cle = arr[i]
         j = i - 1
 
+        # Mover los elementos del arreglo que son mayores que la clave a una posición adelante de su posición actual
         while j >= 0 and cle < arr[j]:
             arr[j + 1] = arr[j]
             j -= 1
