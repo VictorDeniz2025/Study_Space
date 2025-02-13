@@ -6,7 +6,7 @@ def burbuja(arr):
 
     for i in range(n):              # Iterar sobre todos los elementos del arreglo
         for j in range(0, n-i-1):   # Iterar sobre los elementos restantes
-           
+
             # Intercambiar si el elemento encontrado es mayor que el siguiente elemento
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
