@@ -1,3 +1,32 @@
+El algoritmo de ordenación por inserción es un algoritmo de ordenación simple que
+funciona construyendo gradualmente una lista ordenada, un elemento a la vez. Toma
+cada elemento del arreglo y lo inserta en su posición correcta dentro de la parte
+ordenada del arreglo.
+
+Funcionamiento del Algoritmo:
+
+Inicialización:
+Comienza desde el segundo elemento del arreglo (índice 1), asumiendo que el primer
+elemento (índice 0) ya está ordenado.
+
+Selección e Inserción:
+Toma el elemento actual (llamado "key") y lo compara con los elementos anteriores
+en el arreglo.
+Si el elemento actual es menor que el elemento comparado, desplaza el elemento
+comparado una posición hacia adelante.
+Repite este proceso hasta encontrar la posición correcta para el elemento actual.
+
+Repetición:
+Repite el proceso para todos los elementos del arreglo.
+En cada iteración completa del arreglo, el siguiente elemento se coloca en su
+posición correcta dentro de la parte ordenada del arreglo.
+
+Finalización:
+El proceso se repite hasta que todos los elementos estén en la parte ordenada,
+lo que significa que el arreglo está ordenado.
+
+Ejemplo de uso:
+
 arr = [64, 25, 12, 22, 11]
 
 Iteración 1 (i = 1)
