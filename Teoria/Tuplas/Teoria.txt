@@ -1,0 +1,71 @@
+Las tuplas en Python
+
+Las tuplas son una estructura de datos en Python que permite almacenar múltiples elementos 
+en una sola variable. A diferencia de las listas, las tuplas son inmutables, lo que significa
+ que no se pueden modificar después de su creación. Los elementos de una tupla pueden ser de
+  diferentes tipos de datos, como números, cadenas, booleanos, etc.
+
+Sintaxis para crear una tupla:
+tupla = (elemento1, elemento2, elemento3, ...)
+
+Ejemplo:
+mi_tupla = (1, 2, 3, "cuatro", True)
+
+Métodos de las tuplas en Python:
+
+1. count(x)
+Devuelve el número de veces que el elemento especificado aparece en la tupla.
+Ejemplo:
+    mi_tupla = (1, 2, 3, 1, 2, 1)
+    cuenta = mi_tupla.count(1)  # Devuelve 3
+
+2. index(x[, start[, end]])
+Devuelve el índice de la primera aparición del elemento especificado. Se pueden especificar índices de inicio y fin opcionales para buscar en un rango específico.
+Ejemplo:
+    mi_tupla = (1, 2, 3, 1, 2, 1)
+    indice = mi_tupla.index(3)  # Devuelve 2
+
+Acceso a elementos de una tupla:
+Puedes acceder a los elementos de una tupla utilizando índices, de la misma manera que lo harías con una lista.
+
+Ejemplo:
+mi_tupla = (1, 2, 3, "cuatro", True)
+print(mi_tupla[0])  # Salida: 1
+print(mi_tupla[3])  # Salida: "cuatro"
+
+Desempaquetado de tuplas:
+Puedes desempaquetar una tupla en variables individuales.
+
+Ejemplo:
+mi_tupla = (1, 2, 3)
+a, b, c = mi_tupla
+print(a)  # Salida: 1
+print(b)  # Salida: 2
+print(c)  # Salida: 3
+
+Concatenación de tuplas:
+Puedes concatenar dos o más tuplas utilizando el operador `+`.
+
+Ejemplo:
+tupla1 = (1, 2, 3)
+tupla2 = (4, 5, 6)
+tupla_concatenada = tupla1 + tupla2
+print(tupla_concatenada)  # Salida: (1, 2, 3, 4, 5, 6)
+
+Repetición de tuplas:
+Puedes repetir una tupla utilizando el operador `*`.
+
+Ejemplo:
+mi_tupla = (1, 2, 3)
+tupla_repetida = mi_tupla * 3
+print(tupla_repetida)  # Salida: (1, 2, 3, 1, 2, 3, 1, 2, 3)
+
+Conversión de lista a tupla:
+Puedes convertir una lista en una tupla utilizando la función `tuple()`.
+
+Ejemplo:
+mi_lista = [1, 2, 3]
+mi_tupla = tuple(mi_lista)
+print(mi_tupla)  # Salida: (1, 2, 3)
+
+

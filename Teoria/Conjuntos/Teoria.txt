@@ -1,0 +1,114 @@
+Los conjuntos en Python
+
+Los conjuntos son una estructura de datos en Python que permite almacenar múltiples elementos en una sola variable, pero a diferencia de las listas y las tuplas, los conjuntos no permiten elementos duplicados y no mantienen un orden específico. Los elementos de un conjunto pueden ser de diferentes tipos de datos, como números, cadenas, booleanos, etc.
+
+Sintaxis para crear un conjunto:
+conjunto = {elemento1, elemento2, elemento3, ...}
+
+Ejemplo:
+mi_conjunto = {1, 2, 3, "cuatro", True}
+
+Métodos de los conjuntos en Python:
+
+1. add(x)
+   Agrega un elemento al conjunto.
+   Ejemplo:
+   mi_conjunto = {1, 2, 3}
+   mi_conjunto.add(4)  # mi_conjunto ahora es {1, 2, 3, 4}
+
+2. update(iterable)
+   Agrega todos los elementos de un iterable (como otra lista o conjunto) al conjunto.
+   Ejemplo:
+   mi_conjunto = {1, 2, 3}
+   mi_conjunto.update([4, 5, 6])  # mi_conjunto ahora es {1, 2, 3, 4, 5, 6}
+
+3. remove(x)
+   Elimina el elemento especificado del conjunto. Si el elemento no está presente, lanza un error KeyError.
+   Ejemplo:
+   mi_conjunto = {1, 2, 3}
+   mi_conjunto.remove(2)  # mi_conjunto ahora es {1, 3}
+
+4. discard(x)
+   Elimina el elemento especificado del conjunto. Si el elemento no está presente, no hace nada.
+   Ejemplo:
+   mi_conjunto = {1, 2, 3}
+   mi_conjunto.discard(2)  # mi_conjunto ahora es {1, 3}
+
+5. pop()
+   Elimina y devuelve un elemento aleatorio del conjunto.
+   Ejemplo:
+   mi_conjunto = {1, 2, 3}
+   elemento = mi_conjunto.pop()  # mi_conjunto ahora es {2, 3} o {1, 3} o {1, 2}
+
+6. clear()
+   Elimina todos los elementos del conjunto.
+   Ejemplo:
+   mi_conjunto = {1, 2, 3}
+   mi_conjunto.clear()  # mi_conjunto ahora es un conjunto vacío
+
+7. union(*otros)
+   Devuelve un nuevo conjunto con todos los elementos del conjunto original y todos los elementos de los otros conjuntos.
+   Ejemplo:
+   conjunto1 = {1, 2, 3}
+   conjunto2 = {3, 4, 5}
+   conjunto_union = conjunto1.union(conjunto2)  # conjunto_union es {1, 2, 3, 4, 5}
+
+8. intersection(*otros)
+   Devuelve un nuevo conjunto con los elementos comunes al conjunto original y a los otros conjuntos.
+   Ejemplo:
+   conjunto1 = {1, 2, 3}
+   conjunto2 = {2, 3, 4}
+   conjunto_interseccion = conjunto1.intersection(conjunto2)  # conjunto_interseccion es {2, 3}
+
+9. difference(*otros)
+   Devuelve un nuevo conjunto con los elementos del conjunto original que no están en los otros conjuntos.
+   Ejemplo:
+   conjunto1 = {1, 2, 3}
+   conjunto2 = {2, 3, 4}
+   conjunto_diferencia = conjunto1.difference(conjunto2)  # conjunto_diferencia es {1}
+
+10. symmetric_difference(otro)
+    Devuelve un nuevo conjunto con los elementos que están en uno de los conjuntos, pero no en ambos.
+    Ejemplo:
+    conjunto1 = {1, 2, 3}
+    conjunto2 = {2, 3, 4}
+    conjunto_diferencia_simetrica = conjunto1.symmetric_difference(conjunto2)  # conjunto_diferencia_simetrica es {1, 4}
+
+11. issubset(otro)
+    Devuelve True si todos los elementos del conjunto están en el otro conjunto.
+    Ejemplo:
+    conjunto1 = {1, 2}
+    conjunto2 = {1, 2, 3}
+    es_subconjunto = conjunto1.issubset(conjunto2)  # Devuelve True
+
+12. issuperset(otro)
+    Devuelve True si todos los elementos del otro conjunto están en el conjunto.
+    Ejemplo:
+    conjunto1 = {1, 2, 3}
+    conjunto2 = {1, 2}
+    es_superconjunto = conjunto1.issuperset(conjunto2)  # Devuelve True
+
+13. isdisjoint(otro)
+    Devuelve True si los conjuntos no tienen elementos en común.
+    Ejemplo:
+    conjunto1 = {1, 2, 3}
+    conjunto2 = {4, 5, 6}
+    es_disjunto = conjunto1.isdisjoint(conjunto2)  # Devuelve True
+
+Ejemplo completo:
+mi_conjunto = {1, 2, 3}
+mi_conjunto.add(4)
+mi_conjunto.update([5, 6])
+mi_conjunto.remove(2)
+mi_conjunto.discard(3)
+elemento = mi_conjunto.pop()
+mi_conjunto.clear()
+mi_conjunto = {1, 2, 3}
+conjunto_union = mi_conjunto.union({4, 5})
+conjunto_interseccion = mi_conjunto.intersection({2, 3, 4})
+conjunto_diferencia = mi_conjunto.difference({2, 3, 4})
+conjunto_diferencia_simetrica = mi_conjunto.symmetric_difference({2, 3, 4})
+es_subconjunto = mi_conjunto.issubset({1, 2, 3, 4})
+es_superconjunto = mi_conjunto.issuperset({1, 2})
+es_disjunto = mi_conjunto.isdisjoint({4, 5, 6})
+

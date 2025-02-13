@@ -1,0 +1,121 @@
+Las cadenas en Python
+
+Las cadenas son una estructura de datos en Python que permite almacenar secuencias de caracteres. Las cadenas son inmutables, lo que significa que no se pueden modificar después de su creación. Sin embargo, puedes realizar muchas operaciones útiles con ellas.
+
+Sintaxis para crear una cadena:
+cadena = "texto"
+
+Ejemplo:
+mi_cadena = "Hola Mundo"
+
+Métodos de las cadenas en Python:
+
+1. upper()
+   Convierte todos los caracteres de la cadena a mayúsculas.
+   Ejemplo:
+   mi_cadena = "Hola Mundo"
+   cadena_mayusculas = mi_cadena.upper()  # Devuelve "HOLA MUNDO"
+
+2. lower()
+   Convierte todos los caracteres de la cadena a minúsculas.
+   Ejemplo:
+   mi_cadena = "Hola Mundo"
+   cadena_minusculas = mi_cadena.lower()  # Devuelve "hola mundo"
+
+3. capitalize()
+   Convierte el primer carácter de la cadena a mayúscula y el resto a minúsculas.
+   Ejemplo:
+   mi_cadena = "hola mundo"
+   cadena_capitalizada = mi_cadena.capitalize()  # Devuelve "Hola mundo"
+
+4. title()
+   Convierte el primer carácter de cada palabra a mayúscula.
+   Ejemplo:
+   mi_cadena = "hola mundo"
+   cadena_titulo = mi_cadena.title()  # Devuelve "Hola Mundo"
+
+5. strip([chars])
+   Elimina los caracteres especificados (o espacios en blanco por defecto) desde el principio y el final de la cadena.
+   Ejemplo:
+   mi_cadena = "  hola mundo  "
+   cadena_limpia = mi_cadena.strip()  # Devuelve "hola mundo"
+
+6. lstrip([chars])
+   Elimina los caracteres especificados (o espacios en blanco por defecto) desde el principio de la cadena.
+   Ejemplo:
+   mi_cadena = "  hola mundo  "
+   cadena_limpia_izquierda = mi_cadena.lstrip()  # Devuelve "hola mundo  "
+
+7. rstrip([chars])
+   Elimina los caracteres especificados (o espacios en blanco por defecto) desde el final de la cadena.
+   Ejemplo:
+   mi_cadena = "  hola mundo  "
+   cadena_limpia_derecha = mi_cadena.rstrip()  # Devuelve "  hola mundo"
+
+8. replace(old, new[, count])
+   Reemplaza todas las apariciones de una subcadena por otra. Se puede especificar un número máximo de reemplazos.
+   Ejemplo:
+   mi_cadena = "Hola Mundo"
+   cadena_reemplazada = mi_cadena.replace("Mundo", "Python")  # Devuelve "Hola Python"
+
+9. split(sep=None, maxsplit=-1)
+   Divide la cadena en una lista utilizando el separador especificado. Se puede especificar un número máximo de divisiones.
+   Ejemplo:
+   mi_cadena = "Hola Mundo"
+   lista_palabras = mi_cadena.split()  # Devuelve ["Hola", "Mundo"]
+
+10. join(iterable)
+    Une los elementos de un iterable (como una lista) en una cadena, utilizando la cadena como separador.
+    Ejemplo:
+    lista_palabras = ["Hola", "Mundo"]
+    cadena_unida = " ".join(lista_palabras)  # Devuelve "Hola Mundo"
+
+11. find(sub[, start[, end]])
+    Devuelve el índice de la primera aparición de la subcadena especificada. Devuelve -1 si no se encuentra.
+    Ejemplo:
+    mi_cadena = "Hola Mundo"
+    indice = mi_cadena.find("Mundo")  # Devuelve 5
+
+12. count(sub[, start[, end]])
+    Devuelve el número de apariciones de la subcadena especificada.
+    Ejemplo:
+    mi_cadena = "Hola Mundo Mundo"
+    cuenta = mi_cadena.count("Mundo")  # Devuelve 2
+
+13. isalpha()
+    Devuelve True si todos los caracteres de la cadena son letras.
+    Ejemplo:
+    mi_cadena = "Hola"
+    es_alpha = mi_cadena.isalpha()  # Devuelve True
+
+14. isdigit()
+    Devuelve True si todos los caracteres de la cadena son dígitos.
+    Ejemplo:
+    mi_cadena = "12345"
+    es_digit = mi_cadena.isdigit()  # Devuelve True
+
+15. isalnum()
+    Devuelve True si todos los caracteres de la cadena son alfanuméricos (letras o dígitos).
+    Ejemplo:
+    mi_cadena = "Hola123"
+    es_alnum = mi_cadena.isalnum()  # Devuelve True
+
+Ejemplo completo:
+mi_cadena = "Hola Mundo"
+cadena_mayusculas = mi_cadena.upper()
+cadena_minusculas = mi_cadena.lower()
+cadena_capitalizada = mi_cadena.capitalize()
+cadena_titulo = mi_cadena.title()
+cadena_limpia = mi_cadena.strip()
+cadena_limpia_izquierda = mi_cadena.lstrip()
+cadena_limpia_derecha = mi_cadena.rstrip()
+cadena_reemplazada = mi_cadena.replace("Mundo", "Python")
+lista_palabras = mi_cadena.split()
+cadena_unida = " ".join(lista_palabras)
+indice = mi_cadena.find("Mundo")
+cuenta = mi_cadena.count("Mundo")
+es_alpha = mi_cadena.isalpha()
+es_digit = mi_cadena.isdigit()
+es_alnum = mi_cadena.isalnum()
+
+Las cadenas son una herramienta fundamental en Python, y estos métodos te permiten manipularlas de diversas maneras para satisfacer tus necesidades de programación.

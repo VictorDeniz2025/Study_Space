@@ -1,0 +1,88 @@
+Los diccionarios en Python
+
+Los diccionarios son una estructura de datos en Python que permite almacenar pares de clave-valor. Cada clave en un diccionario es única y se utiliza para acceder a su valor correspondiente. Los diccionarios son mutables, lo que significa que se pueden modificar después de su creación.
+
+Sintaxis para crear un diccionario:
+diccionario = {clave1: valor1, clave2: valor2, ...}
+
+Ejemplo:
+mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+
+Métodos de los diccionarios en Python:
+
+1. keys()
+   Devuelve una vista de las claves del diccionario.
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+   claves = mi_diccionario.keys()  # Devuelve dict_keys(['nombre', 'edad', 'ciudad'])
+
+2. values()
+   Devuelve una vista de los valores del diccionario.
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+   valores = mi_diccionario.values()  # Devuelve dict_values(['Juan', 30, 'Madrid'])
+
+3. items()
+   Devuelve una vista de los pares clave-valor del diccionario.
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+   items = mi_diccionario.items()  # Devuelve dict_items([('nombre', 'Juan'), ('edad', 30), ('ciudad', 'Madrid')])
+
+4. get(clave[, valor_predeterminado])
+   Devuelve el valor de la clave especificada. Si la clave no existe, devuelve el valor predeterminado (None si no se especifica).
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+   nombre = mi_diccionario.get("nombre")  # Devuelve 'Juan'
+   pais = mi_diccionario.get("pais", "Desconocido")  # Devuelve 'Desconocido'
+
+5. update(otro)
+   Actualiza el diccionario con los pares clave-valor de otro diccionario o iterable.
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30}
+   mi_diccionario.update({"ciudad": "Madrid", "pais": "España"})  # mi_diccionario ahora es {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Madrid', 'pais': 'España'}
+
+6. pop(clave[, valor_predeterminado])
+   Elimina la clave especificada y devuelve su valor. Si la clave no existe, devuelve el valor predeterminado (lanza un KeyError si no se especifica).
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30}
+   edad = mi_diccionario.pop("edad")  # Devuelve 30 y mi_diccionario ahora es {'nombre': 'Juan'}
+
+7. popitem()
+   Elimina y devuelve el último par clave-valor insertado en el diccionario.
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30}
+   ultimo_item = mi_diccionario.popitem()  # Devuelve ('edad', 30) y mi_diccionario ahora es {'nombre': 'Juan'}
+
+8. clear()
+   Elimina todos los elementos del diccionario.
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30}
+   mi_diccionario.clear()  # mi_diccionario ahora es {}
+
+9. setdefault(clave[, valor_predeterminado])
+   Devuelve el valor de la clave especificada. Si la clave no existe, la inserta con el valor predeterminado (None si no se especifica).
+   Ejemplo:
+   mi_diccionario = {"nombre": "Juan", "edad": 30}
+   ciudad = mi_diccionario.setdefault("ciudad", "Desconocida")  # Devuelve 'Desconocida' y mi_diccionario ahora es {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Desconocida'}
+
+10. copy()
+    Devuelve una copia superficial del diccionario.
+    Ejemplo:
+    mi_diccionario = {"nombre": "Juan", "edad": 30}
+    copia_diccionario = mi_diccionario.copy()  # copia_diccionario es {'nombre': 'Juan', 'edad': 30}
+
+Ejemplo completo:
+mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
+claves = mi_diccionario.keys()
+valores = mi_diccionario.values()
+items = mi_diccionario.items()
+nombre = mi_diccionario.get("nombre")
+pais = mi_diccionario.get("pais", "Desconocido")
+mi_diccionario.update({"pais": "España"})
+edad = mi_diccionario.pop("edad")
+ultimo_item = mi_diccionario.popitem()
+mi_diccionario.clear()
+mi_diccionario = {"nombre": "Juan", "edad": 30}
+ciudad = mi_diccionario.setdefault("ciudad", "Desconocida")
+copia_diccionario = mi_diccionario.copy()
+
