@@ -1,7 +1,9 @@
 Las listas en Python
 
-Las listas son una estructura de datos en Python que permite almacenar múltiples elementos en una sola variable.
-Los elementos de una lista pueden ser de diferentes tipos de datos, como números, cadenas, booleanos, etc.
+Las listas son una estructura de datos en Python que permite almacenar múltiples elementos en una
+sola variable.
+Los elementos de una lista pueden ser de diferentes tipos de datos, como números, cadenas,
+booleanos, etc.
 Las listas son mutables, lo que significa que se pueden modificar después de su creación.
 
 Sintaxis para crear una lista:
