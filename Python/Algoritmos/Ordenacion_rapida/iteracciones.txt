@@ -1,0 +1,65 @@
+El algoritmo de ordenación rápida (Quicksort) es un algoritmo 
+de ordenación eficiente que utiliza el enfoque de "divide y vencerás".
+Funciona seleccionando un "pivote" y particionando el arreglo en tres
+subarreglos: elementos menores que el pivote, elementos iguales al pivote
+y elementos mayores que el pivote. Luego, aplica recursivamente el mismo
+proceso a los subarreglos de elementos menores y mayores.
+
+Funcionamiento del Algoritmo:
+
+Inicialización:
+Selecciona un pivote del arreglo. En este caso, se elige el elemento del medio del arreglo.
+
+Partición:
+Divide el arreglo en tres subarreglos:
+- elementos_inf: contiene los elementos menores que el pivote.
+- elementos_eq: contiene los elementos iguales al pivote.
+- elementos_sup: contiene los elementos mayores que el pivote.
+
+Recursión:
+Aplica recursivamente el algoritmo de ordenación rápida a los subarreglos de
+elementos menores y mayores.
+
+Combinación:
+Combina los subarreglos ordenados y el pivote para obtener el arreglo ordenado final.
+
+Finalización:
+El proceso se repite hasta que todos los subarreglos tengan un tamaño de 1 o 0, 
+lo que significa que el arreglo está ordenado.
+
+Ejemplo de uso:
+
+arr = [3, 6, 8, 10, 1, 2, 1]
+
+Iteración 1:
+- pivote = 8
+- elementos_inf = [3, 6, 1, 2, 1]
+- elementos_eq = [8]
+- elementos_sup = [10]
+
+Iteración 2 (subarreglo [3, 6, 1, 2, 1]):
+- pivote = 1
+- elementos_inf = []
+- elementos_eq = [1, 1]
+- elementos_sup = [3, 6, 2]
+
+Iteración 3 (subarreglo [3, 6, 2]):
+- pivote = 6
+- elementos_inf = [3, 2]
+- elementos_eq = [6]
+- elementos_sup = []
+
+Iteración 4 (subarreglo [3, 2]):
+- pivote = 2
+- elementos_inf = []
+- elementos_eq = [2]
+- elementos_sup = [3]
+
+Combinación:
+- Subarreglo [3, 2] ordenado: [2, 3]
+- Subarreglo [3, 6, 2] ordenado: [2, 3, 6]
+- Subarreglo [3, 6, 1, 2, 1] ordenado: [1, 1, 2, 3, 6]
+- Arreglo completo ordenado: [1, 1, 2, 3, 6, 8, 10]
+
+Resultado Final:
+El arreglo ordenado es: [1, 1, 2, 3, 6, 8, 10]
