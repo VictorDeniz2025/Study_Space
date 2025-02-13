@@ -1,12 +1,12 @@
 # Algoritmo de ordenación de elementos por burbuja
 
-def tri_a_bulles(arr):
+def burbuja(arr):
     n = len(arr)
     print(n)  # Mostrar el número de elementos en el arreglo
 
-    # Iterar sobre todos los elementos del arreglo
-    for i in range(n):
-        for j in range(0, n-i-1):  # Últimos i elementos ya están en su lugar
+    for i in range(n):              # Iterar sobre todos los elementos del arreglo
+        for j in range(0, n-i-1):   # Iterar sobre los elementos restantes
+           
             # Intercambiar si el elemento encontrado es mayor que el siguiente elemento
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
@@ -16,10 +16,11 @@ def tri_a_bulles(arr):
 
 # Ejemplo de uso
 
+
 arr = [64, 34, 25, 12, 22, 11, 90]
 print("El arreglo original es:")
 print(arr)
-ordenado = tri_a_bulles(arr)
+ordenado = burbuja(arr)
 print("El arreglo ordenado es:")
 print(ordenado)
 
