@@ -32,33 +32,40 @@ Ejemplo de uso:
 arr = [3, 6, 8, 10, 1, 2, 1]
 
 Iteración 1:
+- pivote = 10
+- elementos_inf = [3, 6, 8, 1, 2, 1]
+- elementos_eq = [10]
+- elementos_sup = []
+
+Iteración 2 (subarreglo [3, 6, 8, 1, 2, 1]):
 - pivote = 8
 - elementos_inf = [3, 6, 1, 2, 1]
 - elementos_eq = [8]
-- elementos_sup = [10]
+- elementos_sup = []
 
-Iteración 2 (subarreglo [3, 6, 1, 2, 1]):
-- pivote = 1
-- elementos_inf = []
-- elementos_eq = [1, 1]
-- elementos_sup = [3, 6, 2]
-
-Iteración 3 (subarreglo [3, 6, 2]):
+Iteración 3 (subarreglo [3, 6, 1, 2, 1]):
 - pivote = 6
-- elementos_inf = [3, 2]
+- elementos_inf = [3, 1, 2, 1]
 - elementos_eq = [6]
 - elementos_sup = []
 
-Iteración 4 (subarreglo [3, 2]):
+Iteración 4 (subarreglo [3, 1, 2, 1]):
 - pivote = 2
-- elementos_inf = []
+- elementos_inf = [1, 1]
 - elementos_eq = [2]
 - elementos_sup = [3]
 
+Iteración 5 (subarreglo [1, 1]):
+- pivote = 1
+- elementos_inf = []
+- elementos_eq = [1, 1]
+- elementos_sup = []
+
 Combinación:
-- Subarreglo [3, 2] ordenado: [2, 3]
-- Subarreglo [3, 6, 2] ordenado: [2, 3, 6]
+- Subarreglo [1, 1] ordenado: [1, 1]
+- Subarreglo [3, 1, 2, 1] ordenado: [1, 1, 2, 3]
 - Subarreglo [3, 6, 1, 2, 1] ordenado: [1, 1, 2, 3, 6]
+- Subarreglo [3, 6, 8, 1, 2, 1] ordenado: [1, 1, 2, 3, 6, 8]
 - Arreglo completo ordenado: [1, 1, 2, 3, 6, 8, 10]
 
 Resultado Final:
