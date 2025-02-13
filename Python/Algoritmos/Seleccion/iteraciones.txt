@@ -1,0 +1,35 @@
+arr = [64, 25, 12, 22, 11]
+
+Iteración 1 (i = 0)
+- min_index = 0
+- j = 1: Compara 25 y 64, min_index se actualiza a 1
+- j = 2: Compara 12 y 25, min_index se actualiza a 2
+- j = 3: Compara 22 y 12, min_index no cambia
+- j = 4: Compara 11 y 12, min_index se actualiza a 4
+- Intercambia 64 y 11. Arreglo: [11, 25, 12, 22, 64]
+
+Iteración 2 (i = 1)
+- min_index = 1
+- j = 2: Compara 12 y 25, min_index se actualiza a 2
+- j = 3: Compara 22 y 12, min_index no cambia
+- j = 4: Compara 64 y 12, min_index no cambia
+- Intercambia 25 y 12. Arreglo: [11, 12, 25, 22, 64]
+
+Iteración 3 (i = 2)
+- min_index = 2
+- j = 3: Compara 22 y 25, min_index se actualiza a 3
+- j = 4: Compara 64 y 22, min_index no cambia
+- Intercambia 25 y 22. Arreglo: [11, 12, 22, 25, 64]
+
+Iteración 4 (i = 3)
+- min_index = 3
+- j = 4: Compara 64 y 25, min_index no cambia
+- Intercambia 25 y 25. Arreglo: [11, 12, 22, 25, 64]
+
+Iteración 5 (i = 4)
+- min_index = 4
+- No hay más comparaciones.
+- Intercambia 64 y 64. Arreglo: [11, 12, 22, 25, 64]
+
+Resultado Final
+El arreglo ordenado es: [11, 12, 22, 25, 64]
