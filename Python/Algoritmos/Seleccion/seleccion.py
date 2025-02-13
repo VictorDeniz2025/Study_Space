@@ -1,13 +1,15 @@
 def ordenar_por_seleccion(arr):
     n = len(arr)
     for i in range(n):
-        # Encuentra el indice del minimo en la parte no ordenada del array
+        # Encuentra el índice del mínimo en la parte no ordenada del array
         min_index = i
         for j in range(i+1, n):
             if arr[j] < arr[min_index]:
                 min_index = j
-                # Intercambia los elementos
-                arr[i], arr[min_index] = arr[min_index], arr[i]
+        # Intercambia los elementos
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+        # Mostrar el estado del arreglo después de cada iteración
+        print(f"Iteración {i}: {arr}")
 
 
 # Ejemplo de uso

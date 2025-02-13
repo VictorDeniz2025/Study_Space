@@ -1,3 +1,31 @@
+El algoritmo de ordenación por selección es un algoritmo de ordenación simple que
+funciona dividiendo el arreglo en dos partes: la parte ordenada y la parte no ordenada.
+El algoritmo selecciona repetidamente el elemento más pequeño de la parte no ordenada
+y lo intercambia con el primer elemento de la parte no ordenada, moviéndolo a la parte
+ordenada. Este proceso se repite hasta que todo el arreglo esté ordenado.
+
+Funcionamiento del Algoritmo:
+
+Inicialización:
+Comienza desde el primer elemento del arreglo.
+
+Selección e Intercambio:
+Encuentra el elemento más pequeño en la parte no ordenada del arreglo.
+Intercambia este elemento con el primer elemento de la parte no ordenada.
+Luego, mueve el límite entre la parte ordenada y la parte no ordenada una posición
+ hacia la derecha.
+
+Repetición:
+Repite el proceso para todos los elementos del arreglo.
+En cada iteración completa del arreglo, el siguiente elemento más pequeño se 
+coloca en su posición correcta.
+
+Finalización:
+El proceso se repite hasta que todos los elementos estén en la parte ordenada, 
+lo que significa que el arreglo está ordenado.
+
+Ejemplo de uso:
+
 arr = [64, 25, 12, 22, 11]
 
 Iteración 1 (i = 0)

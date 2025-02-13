@@ -1,3 +1,28 @@
+El algoritmo de ordenación por burbuja es un algoritmo de ordenación simple que
+funciona comparando repetidamente pares adyacentes de elementos y los intercambia
+si están en el orden incorrecto. Este proceso se repite hasta que el arreglo esté
+completamente ordenado. El nombre "burbuja" proviene del hecho de que los elementos
+más grandes "burbujearán" hacia el final del arreglo en cada iteración.
+
+Funcionamiento del Algoritmo:
+
+Inicialización: 
+Comienza desde el primer elemento del arreglo.
+
+Comparación e Intercambio:
+Compara el primer elemento con el segundo.
+Si el primer elemento es mayor que el segundo, intercámbialos.
+Luego, compara el segundo elemento con el tercero, y así sucesivamente hasta el final 
+del arreglo.
+
+Repetición:
+Repite el proceso para todos los elementos del arreglo. 
+En cada iteración completa del arreglo, el siguiente elemento más grande se coloca 
+en su posición correcta.
+Finalización: El proceso se repite hasta que no se necesiten más intercambios, 
+lo que significa que el arreglo está ordenado.
+
+
 arr = [64, 34, 25, 12, 22, 11, 90]
 
 Iteración 1 (i = 0)
