@@ -196,7 +196,7 @@ Las secuencias en Python incluyen tipos de datos como listas, tuplas y cadenas. 
       indice = lista.index(2)  # Devuelve 1
       ```
 
-Estas operaciones son comunes a todas las secuencias en Python y proporcionan una forma flexible y poderosa de manipular y trabajar con datos secuenciales.
+
 
 
 
