@@ -74,7 +74,9 @@ Métodos de las listas en Python:
 
 Operaciones Comunes a Todas las Secuencias en Python
 
-Las secuencias en Python incluyen tipos de datos como listas, tuplas y cadenas. A continuación se describen algunas de las operaciones comunes que se pueden realizar en todas las secuencias:
+Las secuencias en Python incluyen tipos de datos como listas, tuplas y cadenas.
+A continuación se describen algunas de las operaciones comunes que se pueden 
+realizar en todas las secuencias:
 
 1. **Indexación**:
    - Acceder a un elemento en una posición específica.
