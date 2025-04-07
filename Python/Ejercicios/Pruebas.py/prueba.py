@@ -1,1 +1,0 @@
-print("holaMike".find("Mike"))  # Salida: 4
