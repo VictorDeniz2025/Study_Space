@@ -1,0 +1,1 @@
+# El programa ha sido eliminado según la solicitud.
