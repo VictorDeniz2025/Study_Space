@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixCanarias</title>
+    <meta name="description" content="Servicio técnico especializado en reparación y mantenimiento en las Islas Canarias.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FixCanarias</div>
+            <ul class="nav-links">
+                <li><a href="indexreal.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="descripcion-site">
+            <h2>¿Qué es FixCanarias?</h2>
+            <p>FixCanarias es tu plataforma profesional para solicitar servicios de reparación, mantenimiento y mejora en las Islas Canarias. Desde electricidad, fontanería y carpintería hasta climatización, domótica y más, puedes gestionar tus incidencias de forma rápida y sencilla. Nuestro equipo de expertos te acompaña en todo el proceso, desde la solicitud hasta la finalización del trabajo, garantizando calidad, transparencia y atención personalizada.</p>
+            <p>En este sitio web podrás:</p>
+            <ul>
+                <li>Consultar todas las áreas de servicio disponibles.</li>
+                <li>Solicitar trabajos mediante formularios específicos para cada especialidad.</li>
+                <li>Contactar con nuestro equipo para resolver dudas.</li>
+                <li>Conocer más sobre FixCanarias y nuestro compromiso con los clientes.</li>
+            </ul>
+        </section>
+        <!-- Aquí irá el contenido dinámico de servicios -->
+    </main>
+    <footer>
+        <p>&copy; 2025 FixCanarias. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+    // Script para resaltar el enlace activo según la URL
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.nav-links a');
+        const current = location.pathname.split('/').pop();
+        links.forEach(link => {
+            // Elimina cualquier .active previa
+            link.classList.remove('active');
+            // Marca como activo si coincide el href
+            if(link.getAttribute('href') === current || (current === '' && link.getAttribute('href').includes('index'))) {
+                link.classList.add('active');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
